@@ -1,4 +1,5 @@
 import Button from "@mui/material/Button";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 function KheroonBtn(props) {
   return (
@@ -15,6 +16,7 @@ function KheroonBtn(props) {
       }}
     >
       {props.btnText}
+      <ArrowForwardIcon sx={{ marginLeft: "10px" }}></ArrowForwardIcon>
     </Button>
   );
 }

@@ -1,12 +1,17 @@
 import Grid from "@mui/material/Grid";
-import { Typography } from "@mui/material";
+import Typography from "@mui/material/Typography";
 import KheroonBtn from "./KheroonBtn";
 import WelcomeImg from "../assets/welcomeImg.jpg";
 import VerticalGrades from "../assets/vertical-grades-primary.png";
 
 function Welcome() {
   return (
-    <Grid container spacing={0} className="screen-block">
+    <Grid
+      container
+      spacing={0}
+      className="screen-block"
+      sx={{ padding: "2% 0" }}
+    >
       <Grid
         item
         xs={3}

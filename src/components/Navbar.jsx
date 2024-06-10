@@ -3,7 +3,6 @@ import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import khLogo from "../assets/kheroonLogo.png";
 import Button from "@mui/material/Button";
-import { Typography } from "@mui/material";
 
 const navItems = [
   {
@@ -31,6 +30,7 @@ function Navbar() {
         color="primary"
         sx={{
           backgroundColor: "#fff",
+          position: "fixed",
           "& .MuiToolbar-root": {
             padding: { xs: "0px" },
           },

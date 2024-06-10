@@ -4,8 +4,13 @@ body {
     box-sizing: border-box;
     margin: 0;
 }
+a {
+    color: #092635;
+    text-decoration: none;
+}
 .padding-full {
-    padding: 0 5%;
+    padding-left: 5%;
+    padding-right: 5%
 }
 .padding-qtr {
     padding: 0 2% 0 5%;
@@ -13,7 +18,8 @@ body {
 .screen-block {
     max-height: 100vh;
     overflow: hidden;
-    padding: 2% 0;
+    padding-bottom: 5%;
+    padding-top: 5%;
 }
 
 /* Navbar */
@@ -31,4 +37,10 @@ body {
     max-height: 100%;
     object-fit: cover;
     width: 100%;
+}
+
+/* Products screen */
+
+.kheroon-tilda {
+    margin-left: 10px;
 }

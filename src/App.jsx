@@ -1,8 +1,8 @@
-import { Typography } from "@mui/material";
 import "./index.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Navbar from "./components/Navbar";
 import Welcome from "./components/Welcome";
+import Products from "./components/Products";
 
 const kheroonTheme = createTheme({
   palette: {
@@ -27,6 +27,7 @@ function App() {
     <ThemeProvider theme={kheroonTheme}>
       <Navbar></Navbar>
       <Welcome></Welcome>
+      <Products></Products>
     </ThemeProvider>
   );
 }
