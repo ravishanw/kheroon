@@ -1,0 +1,34 @@
+/* Global */
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+.padding-full {
+    padding: 0 5%;
+}
+.padding-qtr {
+    padding: 0 2% 0 5%;
+}
+.screen-block {
+    max-height: 100vh;
+    overflow: hidden;
+    padding: 2% 0;
+}
+
+/* Navbar */
+
+.kh-logo {
+    width: 200px;
+}
+
+/* Welcome screen */
+.vertical-grades {
+    height: 50vh;
+    margin-top: 18%;
+}
+.welcome-img {
+    max-height: 100%;
+    object-fit: cover;
+    width: 100%;
+}

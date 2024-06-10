@@ -2,6 +2,7 @@ import { Typography } from "@mui/material";
 import "./index.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Navbar from "./components/Navbar";
+import Welcome from "./components/Welcome";
 
 const kheroonTheme = createTheme({
   palette: {
@@ -25,9 +26,7 @@ function App() {
   return (
     <ThemeProvider theme={kheroonTheme}>
       <Navbar></Navbar>
-      <div>
-        <Typography>Hello world</Typography>
-      </div>
+      <Welcome></Welcome>
     </ThemeProvider>
   );
 }
