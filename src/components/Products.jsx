@@ -1,5 +1,6 @@
 import Grid from "@mui/material/Grid";
 import KheroonTitle from "./KheroonTitle";
+import VerticalGrades from "./VerticalGrades";
 import KheroonCard from "./KheroonCard";
 import RingImg from "../assets/rings.jpg";
 import PendantImg from "../assets/pendants.jpg";
@@ -50,6 +51,7 @@ function Products() {
     <Grid container spacing={0} className="screen-block padding-full">
       <Grid item xs={3}>
         <KheroonTitle titleText="Products"></KheroonTitle>
+        <VerticalGrades></VerticalGrades>
       </Grid>
       <Grid item xs={9}>
         <Grid container spacing={0} xs={12}>

@@ -6,7 +6,13 @@ import Typography from "@mui/material/Typography";
 
 function KheroonCard(props) {
   return (
-    <Card sx={{ borderRadius: "0", width: "100%" }}>
+    <Card
+      className="hover-craft"
+      sx={{
+        borderRadius: "0",
+        width: "100%",
+      }}
+    >
       <a href={props.productHref}>
         <CardActionArea>
           <CardMedia

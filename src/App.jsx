@@ -9,7 +9,7 @@ const kheroonTheme = createTheme({
     primary: {
       main: "#092635",
       light: "#0F3E55",
-      dark: "#0F3E55",
+      dark: "#02343C",
     },
     secondary: {
       main: "#D8B6A4",

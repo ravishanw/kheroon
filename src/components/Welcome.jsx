@@ -2,7 +2,7 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import KheroonBtn from "./KheroonBtn";
 import WelcomeImg from "../assets/welcomeImg.jpg";
-import VerticalGrades from "../assets/vertical-grades-primary.png";
+import VerticalGrades from "./VerticalGrades";
 
 function Welcome() {
   return (
@@ -18,18 +18,14 @@ function Welcome() {
         className="padding-qtr"
         sx={{ backgroundColor: "secondary.light" }}
       >
-        <img
-          src={VerticalGrades}
-          alt="image of decorative lines"
-          className="vertical-grades"
-        />
+        <VerticalGrades></VerticalGrades>
         <Typography className="welcome-text" sx={{ margin: "50px 0" }}>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum
           voluptatem repudiandae quo! Sed quos, alias ad qui fugit dolorem
           laboriosam!
         </Typography>
         <KheroonBtn
-          btnColor="secondary.dark"
+          btnColor="primary.main"
           btnText="Browse products"
         ></KheroonBtn>
       </Grid>
