@@ -16,18 +16,20 @@ function Welcome() {
         item
         xs={3}
         className="padding-qtr"
-        sx={{ backgroundColor: "secondary.light" }}
+        sx={{ backgroundColor: "secondary.light", position: "relative" }}
       >
         <VerticalGrades></VerticalGrades>
-        <Typography className="welcome-text" sx={{ margin: "50px 0" }}>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum
-          voluptatem repudiandae quo! Sed quos, alias ad qui fugit dolorem
-          laboriosam!
-        </Typography>
-        <KheroonBtn
-          btnColor="primary.main"
-          btnText="Browse products"
-        ></KheroonBtn>
+        <div className="welcome-cta-container">
+          <Typography sx={{ marginBottom: "50px" }}>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum
+            voluptatem repudiandae quo! Sed quos, alias ad qui fugit dolorem
+            laboriosam!
+          </Typography>
+          <KheroonBtn
+            btnColor="primary.main"
+            btnText="Browse products"
+          ></KheroonBtn>
+        </div>
       </Grid>
       <Grid item xs={9}>
         <img

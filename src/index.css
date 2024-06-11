@@ -13,10 +13,13 @@ a {
     padding-right: 5%
 }
 .padding-qtr {
-    padding: 0 2% 0 5%;
+    padding: 0 5% 0 5%;
+}
+.padding-three-qtr {
+    padding-right: 5%;
 }
 .screen-block {
-    max-height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
     padding-bottom: 5%;
     padding-top: 5%;
@@ -36,11 +39,7 @@ a {
     height: 350px;
     justify-content: space-between;
     margin-top: 20px;
-    width: 50%;
-}
-.vertical-grades {
-    height: 50vh;
-    margin-top: 18%;
+    width: 70%;
 }
 .vertical-grades-0 {
     background: linear-gradient(to bottom, transparent, #092635 10%, #092635 90%, transparent);
@@ -81,13 +80,21 @@ a {
     height: 45%;
 }
 .welcome-img {
-    max-height: 100%;
+    min-height: 100%;
     object-fit: cover;
     width: 100%;
 }
-
+.welcome-cta-container {
+    bottom: 20%;
+    position: absolute;
+    padding-right: 8%;
+}
 /* Products screen */
 
 .kheroon-tilda {
     margin-left: 10px;
+}
+.bottom-grades-container {
+    display: flex;
+    justify-content: flex-end;
 }
