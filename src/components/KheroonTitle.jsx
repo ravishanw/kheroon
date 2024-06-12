@@ -11,7 +11,7 @@ function KheroonTitle(props) {
       }}
     >
       {props.titleText}
-      <span style={{ color: "#D8B6A4", marginLeft: "10px" }}>~</span>
+      <span style={{ color: props.tildaColor, marginLeft: "10px" }}>~</span>
     </Typography>
   );
 }

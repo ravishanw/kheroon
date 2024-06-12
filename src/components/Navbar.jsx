@@ -35,7 +35,7 @@ function Navbar() {
             padding: { xs: "0px" },
           },
         }}
-        className="padding-full"
+        className="padding-horizontal"
       >
         <Toolbar>
           <Box sx={{ flex: 1 }}>

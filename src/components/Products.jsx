@@ -1,6 +1,6 @@
 import Grid from "@mui/material/Grid";
 import KheroonTitle from "./KheroonTitle";
-import VerticalGrades from "./VerticalGrades";
+import DoubleGrades from "./DoubleGrades";
 import KheroonCard from "./KheroonCard";
 import RingImg from "../assets/rings.jpg";
 import PendantImg from "../assets/pendants.jpg";
@@ -56,19 +56,20 @@ const productsArr = [
 
 function Products() {
   return (
-    <Grid container spacing={0} className="screen-block">
-      <Grid item xs={3} className="padding-qtr">
-        <KheroonTitle titleText="Products"></KheroonTitle>
-        <VerticalGrades></VerticalGrades>
-        <div className="bottom-grades-container">
-          <VerticalGrades></VerticalGrades>
-        </div>
+    <Grid
+      container
+      spacing={0}
+      className="screen-block padding-horizontal padding-vertical"
+    >
+      <Grid item xs={3} className="left-panel">
+        <KheroonTitle titleText="Products" tildaColor="#D8B6A4"></KheroonTitle>
+        <DoubleGrades></DoubleGrades>
       </Grid>
-      <Grid item xs={9} className="padding-three-qtr">
-        <Grid container spacing={0} xs={12}>
+      <Grid item xs={9}>
+        <Grid container spacing={0}>
           {productsArr.map((el, index) => {
             return (
-              <Grid item xs={4} sx={{ padding: "0 20px 20px 0" }}>
+              <Grid key={index} item xs={4} sx={{ padding: "0 30px 30px 0" }}>
                 <KheroonCard
                   key={index}
                   productTitle={el.productTitle}

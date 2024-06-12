@@ -16,7 +16,7 @@ function KheroonCard(props) {
       <a href={props.productHref}>
         <CardActionArea>
           <CardMedia
-            sx={{ height: 400 }}
+            sx={{ height: 260 }}
             image={props.imgSrc}
             alt={props.imgAlt}
           />

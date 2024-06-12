@@ -3,6 +3,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Navbar from "./components/Navbar";
 import Welcome from "./components/Welcome";
 import Products from "./components/Products";
+import OurStory from "./components/OurStory";
 
 const kheroonTheme = createTheme({
   palette: {
@@ -28,6 +29,7 @@ function App() {
       <Navbar></Navbar>
       <Welcome></Welcome>
       <Products></Products>
+      <OurStory></OurStory>
     </ThemeProvider>
   );
 }
