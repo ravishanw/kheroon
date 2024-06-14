@@ -8,7 +8,46 @@ import StoryImg2 from "../assets/storyImg2.jpg";
 import StoryImg3 from "../assets/storyImg3.jpg";
 import StoryImg4 from "../assets/storyImg4.jpg";
 
+const galleryArr = [
+  {
+    imgSrc: StoryImg1,
+    imgAlt: "alt",
+    imgHeight: "16rem",
+    imgPadding: "0",
+    colWidth: 12,
+  },
+  {
+    imgSrc: StoryImg2,
+    imgAlt: "alt",
+    imgHeight: "25rem",
+    imgPadding: "20px",
+    colWidth: 4,
+  },
+  {
+    imgSrc: StoryImg3,
+    imgAlt: "alt",
+    imgHeight: "25rem",
+    imgPadding: "20px",
+    colWidth: 4,
+  },
+  {
+    imgSrc: StoryImg4,
+    imgAlt: "alt",
+    imgHeight: "25rem",
+    imgPadding: "0",
+    colWidth: 4,
+  },
+];
+
 function OurStory() {
+  function handleMouseOver(e) {
+    e.target.classList.remove("img-slide");
+    e.target.classList.add("img-hype");
+  }
+  function handleMouseLeave(e) {
+    e.target.classList.remove("img-hype");
+  }
+
   return (
     <Grid
       container
@@ -22,7 +61,7 @@ function OurStory() {
       </Grid>
       <Grid item xs={9}>
         <Grid container spacing={0}>
-          <Grid item xs={8} sx={{ paddingRight: "20px" }}>
+          <Grid item xs={8} sx={{ marginBottom: "20px", paddingRight: "20px" }}>
             <Typography>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
               reprehenderit, vero aliquid iusto voluptas alias inventore error,
@@ -39,23 +78,30 @@ function OurStory() {
             ></KheroonBtn>
           </Grid>
         </Grid>
-        <Grid container spacing={0} sx={{ maxHeight: "50%" }}>
-          <Grid item xs={12}>
-            <img
-              className="story-img"
-              src={StoryImg1}
-              alt="woman wearing necklace and man"
-            />
-          </Grid>
-          <Grid item xs={4}>
-            <img className="story-img" src={StoryImg2} alt="" />
-          </Grid>
-          <Grid item xs={4}>
-            <img className="story-img" src={StoryImg3} alt="" />
-          </Grid>
-          <Grid item xs={4}>
-            <img className="story-img" src={StoryImg4} alt="" />
-          </Grid>
+        <Grid container spacing={0}>
+          {galleryArr.map((el, index) => {
+            return (
+              <Grid
+                key={index}
+                item
+                xs={el.colWidth}
+                sx={{
+                  height: el.imgHeight,
+                  marginBottom: "20px",
+                  paddingRight: el.imgPadding,
+                  overflow: "hidden",
+                }}
+                onMouseOver={handleMouseOver}
+                onMouseLeave={handleMouseLeave}
+              >
+                <img
+                  src={el.imgSrc}
+                  alt={el.imgAlt}
+                  className="story-img img-slide"
+                />
+              </Grid>
+            );
+          })}
         </Grid>
       </Grid>
     </Grid>

@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Welcome from "./components/Welcome";
 import Products from "./components/Products";
 import OurStory from "./components/OurStory";
+import Testimonials from "./components/Testimonials";
 
 const kheroonTheme = createTheme({
   palette: {
@@ -30,6 +31,7 @@ function App() {
       <Welcome></Welcome>
       <Products></Products>
       <OurStory></OurStory>
+      <Testimonials></Testimonials>
     </ThemeProvider>
   );
 }

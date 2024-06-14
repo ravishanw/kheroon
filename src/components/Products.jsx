@@ -69,7 +69,7 @@ function Products() {
         <Grid container spacing={0}>
           {productsArr.map((el, index) => {
             return (
-              <Grid key={index} item xs={4} sx={{ padding: "0 30px 30px 0" }}>
+              <Grid key={index} item xs={4} sx={{ padding: "0 20px 20px 0" }}>
                 <KheroonCard
                   key={index}
                   productTitle={el.productTitle}
