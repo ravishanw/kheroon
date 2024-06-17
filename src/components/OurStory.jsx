@@ -61,7 +61,7 @@ function OurStory() {
       </Grid>
       <Grid item xs={9}>
         <Grid container spacing={0}>
-          <Grid item xs={8} sx={{ marginBottom: "20px", paddingRight: "20px" }}>
+          <Grid item xs={8} sx={{ marginBottom: "20px", padding: "0 20px" }}>
             <Typography>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
               reprehenderit, vero aliquid iusto voluptas alias inventore error,

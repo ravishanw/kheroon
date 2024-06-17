@@ -2,6 +2,7 @@ import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import CardActionArea from "@mui/material/CardActionArea";
+import KheroonSubTitle from "./KheroonSubTitle";
 import Typography from "@mui/material/Typography";
 
 function KheroonCard(props) {
@@ -21,12 +22,7 @@ function KheroonCard(props) {
             alt={props.imgAlt}
           />
           <CardContent>
-            <Typography
-              variant="h3"
-              sx={{ fontSize: "1.2rem", fontWeight: "600", margin: "10px 0" }}
-            >
-              {props.productTitle}
-            </Typography>
+            <KheroonSubTitle subTitle={props.productTitle}></KheroonSubTitle>
             <Typography>{props.productDetails}</Typography>
           </CardContent>
         </CardActionArea>

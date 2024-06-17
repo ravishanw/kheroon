@@ -134,6 +134,14 @@ a {
     width: 100%;
 }
 
+/* Testimonials */
+
+.testimonials-img {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+}
+
 /* Animations */
 
 .img-slide {
