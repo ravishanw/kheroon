@@ -160,10 +160,17 @@ a {
     }
 }
 @keyframes imgHype {
-    0% {
+    /* 0% {
         object-position: 0% 20%;
     }
     100% {
         object-position: 0% 40%;
+    } */
+    0% {
+        filter:sepia(1);
     }
+    100% {
+        filter:sepia(0);
+    }
+
 }
