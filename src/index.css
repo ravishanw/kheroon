@@ -137,6 +137,7 @@ a {
 /* Testimonials */
 
 .testimonials-img {
+    height: 85vh;
     object-fit: cover;
     overflow: hidden;
     width: 100%;

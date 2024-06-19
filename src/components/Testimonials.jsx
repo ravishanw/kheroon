@@ -6,6 +6,7 @@ import KheroonSubTitle from "./KheroonSubTitle";
 import testimonialsImg1 from "../assets/testimonialsImg1.jpg";
 import testimonialsImg2 from "../assets/testimonialsImg2.jpg";
 import testimonialsImg3 from "../assets/testimonialsImg3.jpg";
+import KheroonCarousel from "./KheroonCarousel";
 
 const testimonialsArr = [
   {
@@ -55,24 +56,7 @@ function Testimonials() {
         <DoubleGrades></DoubleGrades>
       </Grid>
       <Grid item xs={9}>
-        <Grid sx={{ backgroundColor: "secondary.light" }} container spacing={0}>
-          <Grid item xs={4} sx={{ padding: "0 20px" }}>
-            <KheroonSubTitle
-              subTitle={testimonialsArr[0].title}
-            ></KheroonSubTitle>
-            <Typography>{testimonialsArr[0].name}</Typography>
-            <Typography>{testimonialsArr[0].designation}</Typography>
-            <Typography>{testimonialsArr[0].company}</Typography>
-            <Typography>{testimonialsArr[0].content}</Typography>
-          </Grid>
-          <Grid item xs={8}>
-            <img
-              src={testimonialsArr[0].imgSrc}
-              alt={testimonialsArr[0].imgAlt}
-              className="testimonials-img"
-            />
-          </Grid>
-        </Grid>
+        <KheroonCarousel carouselArr={testimonialsArr}></KheroonCarousel>
       </Grid>
     </Grid>
   );
