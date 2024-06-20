@@ -136,11 +136,18 @@ a {
 
 /* Testimonials */
 
+.slider-container {
+    position:relative;
+}
 .testimonials-img {
     height: 85vh;
     object-fit: cover;
     overflow: hidden;
     width: 100%;
+}
+.carousel-controls {
+    bottom: 20px;
+    position:absolute;
 }
 
 /* Animations */
