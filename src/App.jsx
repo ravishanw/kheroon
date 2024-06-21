@@ -5,6 +5,7 @@ import Welcome from "./components/Welcome";
 import Products from "./components/Products";
 import OurStory from "./components/OurStory";
 import Testimonials from "./components/Testimonials";
+import ContactUs from "./components/ContactUs";
 
 const kheroonTheme = createTheme({
   palette: {
@@ -32,6 +33,7 @@ function App() {
       <Products></Products>
       <OurStory></OurStory>
       <Testimonials></Testimonials>
+      <ContactUs></ContactUs>
     </ThemeProvider>
   );
 }

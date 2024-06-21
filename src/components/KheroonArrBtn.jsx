@@ -13,6 +13,7 @@ function KheroonArrBtn(props) {
         borderRadius: "0",
         borderColor: props.btnColor,
         color: props.btnColor,
+        marginRight: "20px",
         "&:hover": {
           backgroundColor: props.btnColor,
           color: "#fff",

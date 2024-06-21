@@ -3,8 +3,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Grid from "@mui/material/Grid";
+import KheroonSubTitleLg from "./KheroonSubTitleLg";
 import KheroonSubTitle from "./KheroonSubTitle";
 import Typography from "@mui/material/Typography";
+import KheroonTilda from "./KheroonTilda";
 import KheroonArrBtn from "./KheroonArrBtn";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
@@ -21,6 +23,7 @@ function KheroonCarousel(props) {
   }
 
   const settings = {
+    arrows: false,
     dots: true,
     fade: true,
     infinite: true,
@@ -48,12 +51,18 @@ function KheroonCarousel(props) {
                 container
                 spacing={0}
               >
-                <Grid item xs={4} sx={{ padding: "0 20px" }}>
-                  <KheroonSubTitle subTitle={el.title}></KheroonSubTitle>
-                  <Typography>{el.name}</Typography>
-                  <Typography>{el.designation}</Typography>
-                  <Typography>{el.company}</Typography>
-                  <Typography>{el.content}</Typography>
+                <Grid item xs={4} sx={{ padding: "20px" }}>
+                  <KheroonSubTitleLg subTitle={el.title}></KheroonSubTitleLg>
+                  <div className="carousel-business-container">
+                    <KheroonSubTitle subTitle={el.name}></KheroonSubTitle>
+                    <Typography>
+                      {el.designation} | {el.company}
+                    </Typography>
+                  </div>
+                  <KheroonTilda></KheroonTilda>
+                  <div className="carousel-content-container">
+                    <Typography>{el.content}</Typography>
+                  </div>
                 </Grid>
                 <Grid item xs={8}>
                   <img
@@ -69,14 +78,12 @@ function KheroonCarousel(props) {
       </Slider>
       <div className="carousel-controls">
         <KheroonArrBtn
-          className="button"
           ariaLabel="previous"
           btnColor="primary.main"
           onClick={handlePrevious}
           icon={<ArrowBackIcon></ArrowBackIcon>}
         ></KheroonArrBtn>
         <KheroonArrBtn
-          className="button"
           ariaLabel="next"
           btnColor="primary.main"
           onClick={handleNext}
