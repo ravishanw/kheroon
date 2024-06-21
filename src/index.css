@@ -22,7 +22,7 @@ a {
 }
 .screen-block {
     max-height: 100vh;
-    min-height: 100vh;
+    min-height: 78vh;
     overflow: hidden;
 }
 .hover-craft {
@@ -141,7 +141,7 @@ a {
     position:relative;
 }
 .testimonials-img {
-    height: 85vh;
+    height: 80vh;
     object-fit: cover;
     overflow: hidden;
     width: 100%;
@@ -151,11 +151,41 @@ a {
 }
 .carousel-content-container {
     margin-top: 2rem;
+    max-height: 50%;
+    overflow: hidden;
 }
 .carousel-controls {
     bottom: 20px;
     left: 20px;
     position:absolute;
+}
+
+/* Contact us */
+
+.socials-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    width:30%;
+}
+.socials-container a:hover {
+    color: #fff;
+}
+.contact-us-separator {
+    height: 50%;
+    left:50%;
+    position:absolute;
+    top:9rem;
+    width: fit-content;
+}
+.contact-us-logo {
+    width: 80%;
+}
+.legal-container {
+    margin-top: 4rem;
+}
+.legal-link:hover {
+    text-decoration: underline;
 }
 
 /* Animations */

@@ -56,34 +56,39 @@ const productsArr = [
 
 function Products() {
   return (
-    <Grid
-      container
-      spacing={0}
-      className="screen-block padding-horizontal padding-vertical"
-    >
-      <Grid item xs={3} className="left-panel">
-        <KheroonTitle titleText="Products" tildaColor="#D8B6A4"></KheroonTitle>
-        <DoubleGrades></DoubleGrades>
-      </Grid>
-      <Grid item xs={9}>
-        <Grid container spacing={0}>
-          {productsArr.map((el, index) => {
-            return (
-              <Grid key={index} item xs={4} sx={{ padding: "0 20px 20px 0" }}>
-                <KheroonCard
-                  key={index}
-                  productTitle={el.productTitle}
-                  productHref={el.productHref}
-                  imgSrc={el.imgSrc}
-                  imgAlt={el.imgAlt}
-                  productDetails={el.productDetails}
-                ></KheroonCard>
-              </Grid>
-            );
-          })}
+    <section id="products">
+      <Grid
+        container
+        spacing={0}
+        className="screen-block padding-horizontal padding-vertical"
+      >
+        <Grid item xs={3} className="left-panel">
+          <KheroonTitle
+            titleText="Products"
+            tildaColor="#D8B6A4"
+          ></KheroonTitle>
+          <DoubleGrades></DoubleGrades>
+        </Grid>
+        <Grid item xs={9}>
+          <Grid container spacing={0}>
+            {productsArr.map((el, index) => {
+              return (
+                <Grid key={index} item xs={4} sx={{ padding: "0 20px 20px 0" }}>
+                  <KheroonCard
+                    key={index}
+                    productTitle={el.productTitle}
+                    productHref={el.productHref}
+                    imgSrc={el.imgSrc}
+                    imgAlt={el.imgAlt}
+                    productDetails={el.productDetails}
+                  ></KheroonCard>
+                </Grid>
+              );
+            })}
+          </Grid>
         </Grid>
       </Grid>
-    </Grid>
+    </section>
   );
 }
 

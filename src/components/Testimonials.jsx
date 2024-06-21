@@ -27,7 +27,7 @@ const testimonialsArr = [
     designation: "Business title",
     company: "Customer",
     content:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit distinctio, blanditiis autem quos nobis minima quisquam odio odit ab. Consequatur.",
+      "Iusto, eaque aperiam! Soluta iure exercitationem dolores dolore, beatae nobis impedit ea! Aspernatur, facere ullam sapiente assumenda nihil necessitatibus explicabo tempore. Ipsum, dolorum?.",
   },
   {
     imgSrc: testimonialsImg3,
@@ -37,28 +37,30 @@ const testimonialsArr = [
     designation: "Business title",
     company: "Customer",
     content:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit distinctio, blanditiis autem quos nobis minima quisquam odio odit ab. Consequatur.",
+      "Sequi iste amet dolorem rem aperiam quis quo? Tempore iure perspiciatis adipisci in magnam itaque, tenetur dolorem quos placeat impedit sequi dolores id aperiam sint pariatur minima sit, voluptate facere blanditiis ea natus laudantium a. Iusto, eaque aperiam! Soluta iure exercitationem dolores dolore, beatae nobis impedit ea! Aspernatur, facere ullam sapiente assumenda nihil necessitatibus explicabo tempore.",
   },
 ];
 
 function Testimonials() {
   return (
-    <Grid
-      container
-      spacing={0}
-      className="screen-block padding-horizontal padding-vertical"
-    >
-      <Grid item xs={3} className="left-panel">
-        <KheroonTitle
-          titleText="Testimonials"
-          tildaColor="#D8B6A4"
-        ></KheroonTitle>
-        <DoubleGrades></DoubleGrades>
+    <section id="testimonials">
+      <Grid
+        container
+        spacing={0}
+        className="screen-block padding-horizontal padding-vertical"
+      >
+        <Grid item xs={3} className="left-panel">
+          <KheroonTitle
+            titleText="Testimonials"
+            tildaColor="#D8B6A4"
+          ></KheroonTitle>
+          <DoubleGrades></DoubleGrades>
+        </Grid>
+        <Grid item xs={9}>
+          <KheroonCarousel carouselArr={testimonialsArr}></KheroonCarousel>
+        </Grid>
       </Grid>
-      <Grid item xs={9}>
-        <KheroonCarousel carouselArr={testimonialsArr}></KheroonCarousel>
-      </Grid>
-    </Grid>
+    </section>
   );
 }
 

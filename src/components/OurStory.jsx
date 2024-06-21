@@ -49,62 +49,61 @@ function OurStory() {
   }
 
   return (
-    <Grid
-      container
-      spacing={0}
-      className="screen-block padding-horizontal padding-vertical"
-      sx={{ backgroundColor: "secondary.main" }}
-    >
-      <Grid item xs={3} className="left-panel">
-        <KheroonTitle titleText="Our story" tildaColor="white"></KheroonTitle>
-        <DoubleGrades></DoubleGrades>
-      </Grid>
-      <Grid item xs={9}>
-        <Grid container spacing={0}>
-          <Grid item xs={8} sx={{ marginBottom: "20px", padding: "0 20px" }}>
-            <Typography>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              reprehenderit, vero aliquid iusto voluptas alias inventore error,
-              quo perspiciatis laborum eveniet voluptatem laboriosam maxime ex
-              nisi blanditiis pariatur vitae veniam! Cupiditate, esse maxime,
-              dolorem sint ducimus id eligendi doloribus quia dolor, architecto
-              provident aut iusto totam odio. Quibusdam, odio dignissimos!
-            </Typography>
+    <section id="our-story">
+      <Grid
+        container
+        spacing={0}
+        className="screen-block padding-horizontal padding-vertical"
+        sx={{ backgroundColor: "secondary.main" }}
+      >
+        <Grid item xs={3} className="left-panel">
+          <KheroonTitle titleText="Our story" tildaColor="white"></KheroonTitle>
+          <DoubleGrades></DoubleGrades>
+        </Grid>
+        <Grid item xs={9}>
+          <Grid container spacing={0}>
+            <Grid item xs={8} sx={{ marginBottom: "20px", padding: "0 20px" }}>
+              <Typography>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati reprehenderit, vero aliquid iusto voluptas alias
+                inventore error, quo perspiciatis laborum eveniet voluptatem.
+              </Typography>
+            </Grid>
+            <Grid item xs={4}>
+              <KheroonBtn
+                btnText="Read more"
+                btnColor="primary.main"
+              ></KheroonBtn>
+            </Grid>
           </Grid>
-          <Grid item xs={4}>
-            <KheroonBtn
-              btnText="Read more"
-              btnColor="primary.main"
-            ></KheroonBtn>
+          <Grid container spacing={0}>
+            {galleryArr.map((el, index) => {
+              return (
+                <Grid
+                  key={index}
+                  item
+                  xs={el.colWidth}
+                  sx={{
+                    height: el.imgHeight,
+                    marginBottom: "20px",
+                    paddingRight: el.imgPadding,
+                    overflow: "hidden",
+                  }}
+                  onMouseOver={handleMouseOver}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <img
+                    src={el.imgSrc}
+                    alt={el.imgAlt}
+                    className="story-img img-slide"
+                  />
+                </Grid>
+              );
+            })}
           </Grid>
         </Grid>
-        <Grid container spacing={0}>
-          {galleryArr.map((el, index) => {
-            return (
-              <Grid
-                key={index}
-                item
-                xs={el.colWidth}
-                sx={{
-                  height: el.imgHeight,
-                  marginBottom: "20px",
-                  paddingRight: el.imgPadding,
-                  overflow: "hidden",
-                }}
-                onMouseOver={handleMouseOver}
-                onMouseLeave={handleMouseLeave}
-              >
-                <img
-                  src={el.imgSrc}
-                  alt={el.imgAlt}
-                  className="story-img img-slide"
-                />
-              </Grid>
-            );
-          })}
-        </Grid>
       </Grid>
-    </Grid>
+    </section>
   );
 }
 
