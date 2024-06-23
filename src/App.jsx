@@ -19,6 +19,9 @@ const kheroonTheme = createTheme({
       light: "#EEEBDD",
       dark: "#630000",
     },
+    alphaSecondary: {
+      main: "rgba(238, 235, 221, 0.4)",
+    },
   },
   typography: {
     fontFamily: "Montserrat",

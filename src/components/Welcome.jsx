@@ -19,13 +19,25 @@ function Welcome() {
             container
             spacing={0}
             className="padding-horizontal"
-            sx={{ position: "absolute", height: "100%", top: "0", zIndex: "2" }}
+            sx={{
+              bottom: { xs: "0" },
+              position: "absolute",
+              maxHeight: "100%",
+              minHeight: "100%",
+              top: { md: "0" },
+              zIndex: "2",
+            }}
           >
             <Grid
               item
-              xs={3}
+              xs={12}
+              md={3}
               sx={{
-                backgroundColor: "secondary.light",
+                backgroundColor: {
+                  xs: "transparent",
+                  md: "secondary.light",
+                },
+                color: { xs: "white", md: "primary.main" },
               }}
             >
               <div className="welcome-panel">
@@ -38,12 +50,13 @@ function Welcome() {
                   </Typography>
                   <KheroonBtn
                     btnColor="primary.main"
+                    btnColorAlt="white"
                     btnText="Browse products"
                   ></KheroonBtn>
                 </div>
               </div>
             </Grid>
-            <Grid item xs={9}></Grid>
+            <Grid item xs={6} md={9}></Grid>
           </Grid>
         </div>
       </div>

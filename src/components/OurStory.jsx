@@ -13,29 +13,31 @@ const galleryArr = [
     imgSrc: StoryImg1,
     imgAlt: "alt",
     imgHeight: "16rem",
-    imgPadding: "0",
     colWidth: 12,
+    xsColWidth: 12,
   },
   {
     imgSrc: StoryImg2,
     imgAlt: "alt",
     imgHeight: "25rem",
-    imgPadding: "20px",
+
     colWidth: 4,
+    xsColWidth: 6,
   },
   {
     imgSrc: StoryImg3,
     imgAlt: "alt",
     imgHeight: "25rem",
-    imgPadding: "20px",
+
     colWidth: 4,
+    xsColWidth: 6,
   },
   {
     imgSrc: StoryImg4,
     imgAlt: "alt",
     imgHeight: "25rem",
-    imgPadding: "0",
     colWidth: 4,
+    xsColWidth: 12,
   },
 ];
 
@@ -56,37 +58,45 @@ function OurStory() {
         className="screen-block padding-horizontal padding-vertical"
         sx={{ backgroundColor: "secondary.main" }}
       >
-        <Grid item xs={3} className="left-panel">
+        <Grid item xs={12} md={3} className="left-panel">
           <KheroonTitle titleText="Our story" tildaColor="white"></KheroonTitle>
           <DoubleGrades></DoubleGrades>
         </Grid>
-        <Grid item xs={9}>
+        <Grid item xs={12} md={9}>
           <Grid container spacing={0}>
-            <Grid item xs={8} sx={{ marginBottom: "20px", padding: "0 20px" }}>
+            <Grid
+              item
+              xs={12}
+              sm={8}
+              sx={{ marginBottom: "20px", padding: "0 20px" }}
+            >
               <Typography>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Obcaecati reprehenderit, vero aliquid iusto voluptas alias
                 inventore error, quo perspiciatis laborum eveniet voluptatem.
               </Typography>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={12} sm={4}>
               <KheroonBtn
                 btnText="Read more"
                 btnColor="primary.main"
               ></KheroonBtn>
             </Grid>
           </Grid>
-          <Grid container spacing={0}>
+          <Grid
+            container
+            spacing={2}
+            sx={{ marginTop: { xs: "20px", sm: "0" } }}
+          >
             {galleryArr.map((el, index) => {
               return (
                 <Grid
                   key={index}
                   item
-                  xs={el.colWidth}
+                  xs={el.xsColWidth}
+                  md={el.colWidth}
                   sx={{
                     height: el.imgHeight,
-                    marginBottom: "20px",
-                    paddingRight: el.imgPadding,
                     overflow: "hidden",
                   }}
                   onMouseOver={handleMouseOver}

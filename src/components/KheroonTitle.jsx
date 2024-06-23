@@ -6,8 +6,9 @@ function KheroonTitle(props) {
       color="primary.main"
       variant="h1"
       sx={{
-        fontSize: "2rem",
+        fontSize: { xs: "1.5rem", md: "1.5rem", lg: "2rem" },
         fontWeight: "900",
+        marginBottom: { xs: "2rem", md: "0" },
       }}
     >
       {props.titleText}

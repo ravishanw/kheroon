@@ -7,11 +7,19 @@ function KheroonBtn(props) {
       sx={{
         border: "1px solid",
         borderRadius: "0",
-        borderColor: props.btnColor,
-        color: props.btnColor,
+        borderColor: props.btnColorAlt
+          ? { xs: props.btnColorAlt, md: props.btnColor }
+          : props.btnColor,
+        color: props.btnColorAlt
+          ? { xs: props.btnColorAlt, md: props.btnColor }
+          : props.btnColor,
         "&:hover": {
-          backgroundColor: props.btnColor,
-          color: "#fff",
+          backgroundColor: props.btnColorAlt
+            ? { xs: props.btnColorAlt, md: props.btnColor }
+            : props.btnColor,
+          color: props.btnColorAlt
+            ? { xs: props.btnColor, md: props.btnColorAlt }
+            : "white",
         },
       }}
     >

@@ -62,18 +62,25 @@ function Products() {
         spacing={0}
         className="screen-block padding-horizontal padding-vertical"
       >
-        <Grid item xs={3} className="left-panel">
+        <Grid item xs={12} md={3} className="left-panel">
           <KheroonTitle
             titleText="Products"
             tildaColor="#D8B6A4"
           ></KheroonTitle>
           <DoubleGrades></DoubleGrades>
         </Grid>
-        <Grid item xs={9}>
+        <Grid item xs={12} md={9}>
           <Grid container spacing={0}>
             {productsArr.map((el, index) => {
               return (
-                <Grid key={index} item xs={4} sx={{ padding: "0 20px 20px 0" }}>
+                <Grid
+                  key={index}
+                  item
+                  xs={12}
+                  sm={6}
+                  md={4}
+                  sx={{ padding: "0 20px 20px 0" }}
+                >
                   <KheroonCard
                     key={index}
                     productTitle={el.productTitle}

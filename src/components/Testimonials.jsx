@@ -49,14 +49,14 @@ function Testimonials() {
         spacing={0}
         className="screen-block padding-horizontal padding-vertical"
       >
-        <Grid item xs={3} className="left-panel">
+        <Grid item xs={12} md={3} className="left-panel">
           <KheroonTitle
             titleText="Testimonials"
             tildaColor="#D8B6A4"
           ></KheroonTitle>
           <DoubleGrades></DoubleGrades>
         </Grid>
-        <Grid item xs={9}>
+        <Grid item xs={12} md={9}>
           <KheroonCarousel carouselArr={testimonialsArr}></KheroonCarousel>
         </Grid>
       </Grid>

@@ -24,7 +24,7 @@ function ContactUs() {
           ></KheroonTitle>
         </Box>
         <Grid container spacing={0} sx={{ marginTop: "4rem" }}>
-          <Grid item xs={6} className="left-panel">
+          <Grid item sm={12} md={6} className="left-panel">
             <Typography>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
               dolorem sint illo, vero esse debitis optio, consequatur est qui
@@ -43,7 +43,7 @@ function ContactUs() {
               </a>
             </div>
           </Grid>
-          <Grid item xs={6} className="left-panel">
+          <Grid item sm={12} md={6} className="left-panel">
             <img
               src={KheroonLogo}
               alt="kheroon logo"
@@ -62,9 +62,11 @@ function ContactUs() {
             </Typography>
           </Grid>
         </Grid>
-        <div className="contact-us-separator">
-          <div className="vertical-grades-0"></div>
-        </div>
+        <Box sx={{ display: { xs: "none", md: "block" } }}>
+          <div className="contact-us-separator">
+            <div className="vertical-grades-0"></div>
+          </div>
+        </Box>
       </Box>
     </section>
   );

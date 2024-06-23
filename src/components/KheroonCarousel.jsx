@@ -23,6 +23,7 @@ function KheroonCarousel(props) {
   }
 
   const settings = {
+    adaptiveHeight: true,
     arrows: false,
     dots: true,
     fade: true,
@@ -50,8 +51,9 @@ function KheroonCarousel(props) {
                 }}
                 container
                 spacing={0}
+                wrap="wrap-reverse"
               >
-                <Grid item xs={4} sx={{ padding: "20px" }}>
+                <Grid item xs={12} sm={6} md={4} sx={{ padding: "20px" }}>
                   <KheroonSubTitleLg subTitle={el.title}></KheroonSubTitleLg>
                   <div className="carousel-business-container">
                     <KheroonSubTitle subTitle={el.name}></KheroonSubTitle>
@@ -64,7 +66,7 @@ function KheroonCarousel(props) {
                     <Typography>{el.content}</Typography>
                   </div>
                 </Grid>
-                <Grid item xs={8}>
+                <Grid item xs={12} sm={6} md={8}>
                   <img
                     src={el.imgSrc}
                     alt={el.imgAlt}
