@@ -68,7 +68,7 @@ function OurStory() {
               item
               xs={12}
               sm={8}
-              sx={{ marginBottom: "20px", padding: "0 20px" }}
+              sx={{ marginBottom: "20px", padding: { sx: "0", md: "0 20px" } }}
             >
               <Typography>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.

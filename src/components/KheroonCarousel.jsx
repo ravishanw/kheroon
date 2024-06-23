@@ -53,7 +53,16 @@ function KheroonCarousel(props) {
                 spacing={0}
                 wrap="wrap-reverse"
               >
-                <Grid item xs={12} sm={6} md={4} sx={{ padding: "20px" }}>
+                <Grid
+                  item
+                  xs={12}
+                  sm={6}
+                  md={4}
+                  sx={{
+                    padding: { xs: "20px 20px 80px 20px" },
+                    height: { xs: "fit-content", sm: "100%" },
+                  }}
+                >
                   <KheroonSubTitleLg subTitle={el.title}></KheroonSubTitleLg>
                   <div className="carousel-business-container">
                     <KheroonSubTitle subTitle={el.name}></KheroonSubTitle>

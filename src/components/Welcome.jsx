@@ -2,6 +2,7 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import KheroonBtn from "./KheroonBtn";
 import WelcomeImg from "../assets/welcomeImg.jpg";
+import Box from "@mui/material/Box";
 import VerticalGrades from "./VerticalGrades";
 
 function Welcome() {
@@ -19,6 +20,7 @@ function Welcome() {
             container
             spacing={0}
             className="padding-horizontal"
+            wrap="wrap-reverse"
             sx={{
               bottom: { xs: "0" },
               position: "absolute",
@@ -41,7 +43,9 @@ function Welcome() {
               }}
             >
               <div className="welcome-panel">
-                <VerticalGrades></VerticalGrades>
+                <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
+                  <VerticalGrades></VerticalGrades>
+                </Box>
                 <div className="welcome-cta-container">
                   <Typography sx={{ marginBottom: "50px" }}>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -52,6 +56,7 @@ function Welcome() {
                     btnColor="primary.main"
                     btnColorAlt="white"
                     btnText="Browse products"
+                    href="#products"
                   ></KheroonBtn>
                 </div>
               </div>
