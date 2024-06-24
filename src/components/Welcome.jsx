@@ -5,7 +5,7 @@ import WelcomeImg from "../assets/welcomeImg.jpg";
 import Box from "@mui/material/Box";
 import VerticalGrades from "./VerticalGrades";
 
-function Welcome() {
+function Welcome(props) {
   return (
     <section id="welcome">
       <div>
@@ -42,7 +42,12 @@ function Welcome() {
                 color: { xs: "white", md: "primary.main" },
               }}
             >
-              <div className="welcome-panel">
+              <div
+                className={
+                  (props.visibleState ? "lazy-load" : "invisible") +
+                  " welcome-panel"
+                }
+              >
                 <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
                   <VerticalGrades></VerticalGrades>
                 </Box>

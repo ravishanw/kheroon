@@ -7,7 +7,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import KheroonLogo from "../assets/kheroonLogo.png";
 
-function ContactUs() {
+function ContactUs(props) {
   return (
     <section id="contact-us">
       <Box
@@ -17,13 +17,22 @@ function ContactUs() {
           position: "relative",
         }}
       >
-        <Box className="left-panel">
+        <Box
+          className={
+            (props.visibleState ? "lazy-load" : "invisible") + " left-panel"
+          }
+        >
           <KheroonTitle
             titleText="Contact us"
             tildaColor="white"
           ></KheroonTitle>
         </Box>
-        <Grid container spacing={0} sx={{ marginTop: "4rem" }}>
+        <Grid
+          container
+          spacing={0}
+          sx={{ marginTop: "4rem" }}
+          className={props.visibleState ? "lazy-load" : "invisible"}
+        >
           <Grid item sm={12} md={6} className="left-panel">
             <Typography>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque

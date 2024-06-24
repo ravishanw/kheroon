@@ -12,51 +12,54 @@ import ViewAllImg from "../assets/viewAll.jpg";
 const productsArr = [
   {
     productTitle: "Rings",
-    productHref: "#",
+    productHref: "#products",
     imgSrc: RingImg,
     imgAlt: "An image of rings",
     productDetails: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
   },
   {
     productTitle: "Pendants",
-    productHref: "#",
+    productHref: "#products",
     imgSrc: PendantImg,
     imgAlt: "An image of pendants",
     productDetails: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
   },
   {
     productTitle: "Earrings",
-    productHref: "#",
+    productHref: "#products",
     imgSrc: EarringImg,
     imgAlt: "An image of earrings",
     productDetails: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
   },
   {
     productTitle: "Necklaces",
-    productHref: "#",
+    productHref: "#products",
     imgSrc: NecklaceImg,
     imgAlt: "An image of necklaces",
     productDetails: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
   },
   {
     productTitle: "Bracelets",
-    productHref: "#",
+    productHref: "#products",
     imgSrc: BraceletImg,
     imgAlt: "An image of braclets",
     productDetails: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
   },
   {
     productTitle: "View all products",
-    productHref: "#",
+    productHref: "#products",
     imgSrc: ViewAllImg,
     imgAlt: "An image of braclets",
     productDetails: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
   },
 ];
 
-function Products() {
+function Products(props) {
   return (
-    <section id="products">
+    <section
+      id="products"
+      className={props.visibleState ? "lazy-load" : "invisible"}
+    >
       <Grid
         container
         spacing={0}

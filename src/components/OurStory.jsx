@@ -41,7 +41,7 @@ const galleryArr = [
   },
 ];
 
-function OurStory() {
+function OurStory(props) {
   function handleMouseOver(e) {
     e.target.classList.remove("img-slide");
     e.target.classList.add("img-hype");
@@ -58,11 +58,23 @@ function OurStory() {
         className="screen-block padding-horizontal padding-vertical"
         sx={{ backgroundColor: "secondary.main" }}
       >
-        <Grid item xs={12} md={3} className="left-panel">
+        <Grid
+          item
+          xs={12}
+          md={3}
+          className={
+            (props.visibleState ? "lazy-load" : "invisible") + " left-panel"
+          }
+        >
           <KheroonTitle titleText="Our story" tildaColor="white"></KheroonTitle>
           <DoubleGrades></DoubleGrades>
         </Grid>
-        <Grid item xs={12} md={9}>
+        <Grid
+          item
+          xs={12}
+          md={9}
+          className={props.visibleState ? "lazy-load" : "invisible"}
+        >
           <Grid container spacing={0}>
             <Grid
               item

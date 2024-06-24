@@ -41,7 +41,7 @@ const testimonialsArr = [
   },
 ];
 
-function Testimonials() {
+function Testimonials(props) {
   return (
     <section id="testimonials">
       <Grid
@@ -49,14 +49,26 @@ function Testimonials() {
         spacing={0}
         className="screen-block padding-horizontal padding-vertical"
       >
-        <Grid item xs={12} md={3} className="left-panel">
+        <Grid
+          item
+          xs={12}
+          md={3}
+          className={
+            (props.visibleState ? "lazy-load" : "invisible") + " left-panel"
+          }
+        >
           <KheroonTitle
             titleText="Testimonials"
             tildaColor="#D8B6A4"
           ></KheroonTitle>
           <DoubleGrades></DoubleGrades>
         </Grid>
-        <Grid item xs={12} md={9}>
+        <Grid
+          item
+          xs={12}
+          md={9}
+          className={props.visibleState ? "lazy-load" : "invisible"}
+        >
           <KheroonCarousel carouselArr={testimonialsArr}></KheroonCarousel>
         </Grid>
       </Grid>

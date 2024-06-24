@@ -60,7 +60,6 @@ function KheroonCarousel(props) {
                   md={4}
                   sx={{
                     padding: { xs: "20px 20px 80px 20px" },
-                    height: { xs: "fit-content", sm: "100%" },
                   }}
                 >
                   <KheroonSubTitleLg subTitle={el.title}></KheroonSubTitleLg>
