@@ -53,9 +53,8 @@ function Welcome(props) {
                 </Box>
                 <div className="welcome-cta-container">
                   <Typography sx={{ marginBottom: "50px" }}>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Illum voluptatem repudiandae quo! Sed quos, alias ad qui
-                    fugit dolorem laboriosam!
+                    Handcrafted elegance. Responsibly sourced exotic gems,
+                    meticulously sculpted for ageless beauty.
                   </Typography>
                   <KheroonBtn
                     btnColor="primary.main"

@@ -83,9 +83,13 @@ function OurStory(props) {
               sx={{ marginBottom: "20px", padding: { sx: "0", md: "0 20px" } }}
             >
               <Typography>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Obcaecati reprehenderit, vero aliquid iusto voluptas alias
-                inventore error, quo perspiciatis laborum eveniet voluptatem.
+                We are a Canadian owned and operated company specializing in
+                handcrafted jewelry in precious metals, and high quality natural
+                precious and semiprecious Gemstones. All Gemstones are ethically
+                sourced and handpicked by professionals and set in Handcrafted
+                Silver or Gold created by Artisans with a long history in the
+                industry. All Gemstones are certified and the Metals with a
+                certificate of authenticity.
               </Typography>
             </Grid>
             <Grid item xs={12} sm={4}>
