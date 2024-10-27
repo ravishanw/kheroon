@@ -2,12 +2,12 @@ import Grid from "@mui/material/Grid";
 import KheroonTitle from "./KheroonTitle";
 import DoubleGrades from "./DoubleGrades";
 import KheroonCard from "./KheroonCard";
-import RingImg from "../assets/rings.jpg";
-import PendantImg from "../assets/pendants.jpg";
-import EarringImg from "../assets/earrings.jpg";
-import NecklaceImg from "../assets/necklace.jpg";
-import BraceletImg from "../assets/bracelet.jpg";
-import ViewAllImg from "../assets/viewAll.jpg";
+import RingImg from "../assets/ringImg.jpg";
+import PendantImg from "../assets/pendantImg.jpg";
+import EarringImg from "../assets/earringImg.jpg";
+import NecklaceImg from "../assets/necklaceImg.jpg";
+import BraceletImg from "../assets/braceletImg.jpg";
+import ViewAllImg from "../assets/viewAllImg.jpg";
 
 const productsArr = [
   {

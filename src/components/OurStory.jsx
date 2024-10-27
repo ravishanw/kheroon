@@ -3,7 +3,7 @@ import KheroonTitle from "./KheroonTitle";
 import DoubleGrades from "./DoubleGrades";
 import Typography from "@mui/material/Typography";
 import KheroonBtn from "./KheroonBtn";
-import StoryImg1 from "../assets/storyImg1.jpg";
+import StoryImg1 from "../assets/welcomeImg.jpg";
 import StoryImg2 from "../assets/storyImg2.jpg";
 import StoryImg3 from "../assets/storyImg3.jpg";
 import StoryImg4 from "../assets/storyImg4.jpg";
