@@ -15,42 +15,36 @@ const productsArr = [
     productHref: "#products",
     imgSrc: RingImg,
     imgAlt: "An image of rings",
-    productDetails: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
   },
   {
     productTitle: "Pendants",
     productHref: "#products",
     imgSrc: PendantImg,
     imgAlt: "An image of pendants",
-    productDetails: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
   },
   {
     productTitle: "Earrings",
     productHref: "#products",
     imgSrc: EarringImg,
     imgAlt: "An image of earrings",
-    productDetails: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
   },
   {
     productTitle: "Necklaces",
     productHref: "#products",
     imgSrc: NecklaceImg,
     imgAlt: "An image of necklaces",
-    productDetails: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
   },
   {
     productTitle: "Bracelets",
     productHref: "#products",
     imgSrc: BraceletImg,
     imgAlt: "An image of braclets",
-    productDetails: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
   },
   {
     productTitle: "View all products",
     productHref: "#products",
     imgSrc: ViewAllImg,
     imgAlt: "An image of braclets",
-    productDetails: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
   },
 ];
 
