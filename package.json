@@ -2,7 +2,7 @@
   "name": "kheroon",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://github.com/ravishanw/kheroon/",
+  "homepage": "https://ravishanw.github.io",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
