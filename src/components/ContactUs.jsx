@@ -35,13 +35,20 @@ function ContactUs(props) {
         >
           <Grid item sm={12} md={6} className="left-panel">
             <Typography>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-              dolorem sint illo, vero esse debitis optio, consequatur est qui
-              ducimus quas quasi ratione odio itaque, maiores incidunt.
-              Accusamus, optio beatae!
+              Address
+              <br />
+              2415 Cavendish drive,
+              <br />
+              Burlington Ontario L7P 3B7.
             </Typography>
+            <div className="inquiries-cta">
+              <Typography>
+                For inquiries about orders, custom designs, or general
+                questions, please reach out via email.
+              </Typography>
+            </div>
             <div className="socials-container">
-              <a href="#">
+              <a href="mailto:info@kheroon.com" target="_blank">
                 <EmailIcon sx={{ fontSize: "40px" }} href="#"></EmailIcon>
               </a>
               <a href="#">

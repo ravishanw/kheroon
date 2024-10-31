@@ -163,6 +163,10 @@ a {
 
 /* Contact us */
 
+.inquiries-cta {
+    margin-top: 20px;
+    width: 60%;
+}
 .socials-container {
     display: flex;
     justify-content: space-between;
@@ -232,6 +236,12 @@ a {
     .hero-img {
         object-position: -100px 0;
     }
+
+    /* Our story */
+
+    .story-img {
+        object-position: 30% 0%;
+    }
 }
 
 @media (max-width: 900px) {
@@ -265,7 +275,7 @@ a {
     /* Welcome screen */
 
     .hero-img {
-        object-position: 40% 0%;
+        object-position: 60% 0%;
     }
     .grades-wrapper {
         width: 50%;
