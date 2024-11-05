@@ -35,23 +35,32 @@ function ContactUs(props) {
         >
           <Grid item sm={12} md={6} className="left-panel">
             <Typography>
-              Address
+              Address:
               <br />
-              2415 Cavendish drive,
-              <br />
-              Burlington Ontario L7P 3B7.
+              Burlington Ontario, Canada.
             </Typography>
             <div className="inquiries-cta">
               <Typography>
                 For inquiries about orders, custom designs, or general
                 questions, please reach out via email.
+                <br />
+              </Typography>
+            </div>
+            <div className="inquiries-cta">
+              <Typography>
+                Email:{" "}
+                <span className="legal-link">
+                  <a href="mailto:info@kheroon.com" target="_blank">
+                    info@kheroon.com
+                  </a>
+                </span>
               </Typography>
             </div>
             <div className="socials-container">
               <a href="mailto:info@kheroon.com" target="_blank">
                 <EmailIcon sx={{ fontSize: "40px" }} href="#"></EmailIcon>
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/kheroon_jewelry/">
                 <InstagramIcon sx={{ fontSize: "40px" }}></InstagramIcon>
               </a>
               <a href="#">
